@@ -2,7 +2,6 @@
 node_modules/
 
 # Ignore demo folder (not part of CDN release)
-demo/
 
 # Ignore build cache or editor files
 .DS_Store
