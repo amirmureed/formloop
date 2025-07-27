@@ -1,0 +1,15 @@
+{
+  "name": "formloop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/formloop.js --outfile=dist/formloop.min.js --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.25.8"
+  }
+}
