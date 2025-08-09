@@ -81,6 +81,41 @@
           <input id="name" name="name" type="text" required />
           <p data-validation="error" data-for="name">Name is required.</p>
         </div>
+        <div>
+          <input
+            type="checkbox"
+            id="gender-male"
+            name="gender"
+            value="male"
+            required
+          />
+          <label for="gender-male">Male</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="gender-female"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="gender-female">Female</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="gender-other"
+            name="gender"
+            value="other"
+            required
+          />
+          <label for="gender-other">Other</label>
+        </div>
+        <p data-validation="error" data-for="gender">
+          Gender is a required field.
+        </p>
         <div class="form-group">
           <label for="email">Email</label>
           <input id="email" name="email" type="email" required />
@@ -149,7 +184,7 @@
       </div>
     </form>
 
-    <!-- Link to your Formloop library -->
-    <script src="https://cdn.jsdelivr.net/gh/amirmureed/formloop@v1.0.0/dist/formloop.min.js"></script>
+    <!-- Formloop library -->
+    <script src="https://cdn.jsdelivr.net/gh/amirmureed/formloop/dist/formloop.min.js"></script>
   </body>
 </html>
