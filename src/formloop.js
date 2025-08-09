@@ -30,6 +30,7 @@
       formEl.addEventListener('click', (e) => {
         const isNext = e.target.matches('[data-form="next-btn"]');
         const isBack = e.target.matches('[data-form="back-btn"]');
+        const isSubmit = e.target.matches('[data-form="submit-btn"]');
 
         if (isNext) {
           e.preventDefault();
@@ -47,12 +48,6 @@
 
         if (isSubmit && !validateCurrentStep()) {
           e.preventDefault(); // prevent submit if invalid
-        }
-      });
-
-      formEl.addEventListener('submit', (e) => {
-        if (!validateCurrentStep()) {
-          e.preventDefault();
         }
       });
 
